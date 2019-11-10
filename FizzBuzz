@@ -1,0 +1,14 @@
+running = True
+while(running):
+    number = input("Write a number? Or \"q\" keyword to exit")
+    if number == "q": 
+        running = False
+        break
+    else: number = int(number)
+    if number%3==0 and number%5==0:
+        print("fizzbuzz")
+    elif number%3==0:
+        print("fizz")
+    elif number%5==0:
+        print("buzz")
+    else: print(number)
